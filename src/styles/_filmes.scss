@@ -1,0 +1,67 @@
+.filmes {
+    padding: 0 100px;
+    text-align: center;
+    padding-bottom: 20px;
+    border-bottom: solid 1px red;
+    &__tabs{
+        display: flex;
+        justify-content: center;
+
+        &__button {
+            width: 250px;
+            height: 330px;
+            border-radius: 6px;
+            cursor: pointer;
+            margin: 10px;
+            overflow-y: hidden;
+            margin-bottom: 30px;
+            border: none;
+
+            button{
+                width:250px;
+                height:250px;
+                background-color: transparent;
+                background-image: url(atravesdoaranhaverso.webp);
+            }
+
+            img {
+                width: 100%;
+                border-radius: 6px;
+                cursor: pointer;
+            }
+
+            &--is--active {
+                transform: scale(1.05, 1.05);
+                transition: 0.5s;
+                border: solid 2px red;
+            }
+
+            &:hover {
+                border: solid 2px red;
+            }
+        }
+    }
+
+    &__sinopse {
+        justify-content:center;
+        display: none;
+        &--is--active {
+            display: flex;
+        }
+        &__item{
+            &__video {
+                width: 300px;
+                height: 170px;
+                border-radius: 6px;
+            }
+
+            &__text{
+                width: 400px;
+                text-align: start;
+                padding-left: 10px;
+                overflow: hidden;
+            }
+        }
+
+    }
+}
